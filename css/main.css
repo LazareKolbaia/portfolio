@@ -1,0 +1,52 @@
+body {
+  background-color: #1e1e1e;
+}
+
+.responsive-font-example {
+  color: white;
+  font-size: 3rem;
+}
+
+h2 p {
+  color: white;
+  font-size: 1rem;
+}
+
+.container-contact {
+  max-width: 100%;
+  width: 500px;
+}
+
+#hoverTxt {
+  position: relative;
+  border-bottom: 1px dotted black;
+}
+
+#hoverTxt:before {
+  content: attr(data-hover);
+  visibility: hidden;
+  opacity: 0;
+  width: 140px;
+  background-color: black;
+  color: #fff;
+  text-align: center;
+  border-radius: 5px;
+  padding: 5px 0;
+  -webkit-transition: opacity 1s ease-in-out;
+  transition: opacity 1s ease-in-out;
+  position: absolute;
+  z-index: 1;
+  left: 0;
+  top: 110%;
+}
+
+#hoverTxt:hover:before {
+  opacity: 1;
+  visibility: visible;
+}
+
+p {
+  color: white;
+  margin-left: -20px;
+}
+/*# sourceMappingURL=main.css.map */
